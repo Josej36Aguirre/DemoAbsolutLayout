@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:DemoAbsolutLayout"
              x:Class="DemoAbsolutLayout.MainPage">
 
-    <AbsoluteLayout>
+    <!--<AbsoluteLayout>
         <Button Text="Caja1"
                 BackgroundColor="SkyBlue" AbsoluteLayout.LayoutBounds="50,50,200,300">
             
@@ -30,5 +30,58 @@
                   AbsoluteLayout.LayoutFlags="HeightProportional">
             
         </Button>
-    </AbsoluteLayout>
+        <Button Text="Y Proporcional"
+                BackgroundColor="Gray" AbsoluteLayout.LayoutBounds="300,300,80,.4"
+                  AbsoluteLayout.LayoutFlags="YProportional">
+
+        </Button>
+    </AbsoluteLayout>-->
+    <ScrollView>
+        <StackLayout Margin="10,20,10,10">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nombre"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"></Label>
+                <Entry Placeholder="Ingrese Nombre"></Entry>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Dirección"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"></Label>
+                <Entry Placeholder="Dirección"></Entry>
+            </StackLayout>
+
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <BoxView BackgroundColor="Orange"
+                         VerticalOptions="FillAndExpand"
+                         HeightRequest="500"
+                         HorizontalOptions="FillAndExpand">
+
+                    </BoxView>
+                </StackLayout>
+                <StackLayout>
+                    <Button Text="Buscar Foto"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Email"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"></Label>
+                    <Entry Placeholder="Ingrese Email"></Entry>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Contraseña"
+                   VerticalOptions="FillAndExpand"
+                   FontAttributes="Bold"></Label>
+                    <Entry Placeholder="Ingrese Contraseña"></Entry>
+                </StackLayout>
+
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+   
 </ContentPage>
