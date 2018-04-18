@@ -40,17 +40,19 @@
         <StackLayout Margin="10,20,10,10">
             <StackLayout Orientation="Horizontal">
                 <Label Text="Nombre"
-                   VerticalOptions="Center"
+                  
                    FontAttributes="Bold"
-                   HorizontalOptions="FillAndExpand"></Label>
-                <Entry Placeholder="Ingrese Nombre"></Entry>
+                   ></Label>
+                <Entry Placeholder="Ingrese Nombre"
+                       HorizontalOptions="FillAndExpand"></Entry>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <Label Text="Dirección"
-                   VerticalOptions="Center"
+                   
                    FontAttributes="Bold"></Label>
-                <Entry Placeholder="Dirección"></Entry>
+                <Entry Placeholder="Dirección"
+                       HorizontalOptions="FillAndExpand"></Entry>
             </StackLayout>
 
             <StackLayout>
@@ -68,16 +70,18 @@
 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Email"
-                   VerticalOptions="Center"
+                  
                    FontAttributes="Bold"></Label>
-                    <Entry Placeholder="Ingrese Email"></Entry>
+                    <Entry Placeholder="Ingrese Email"
+                           HorizontalOptions="FillAndExpand"></Entry>
                 </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
                     <Label Text="Contraseña"
-                   VerticalOptions="FillAndExpand"
+                
                    FontAttributes="Bold"></Label>
-                    <Entry Placeholder="Ingrese Contraseña"></Entry>
+                    <Entry Placeholder="Ingrese Contraseña"
+                           HorizontalOptions="FillAndExpand"></Entry>
                 </StackLayout>
 
             </StackLayout>
